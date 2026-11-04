@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Co-Chan — Politique de confidentialité</title>
+<style>
+  :root { --fond: #f6f6f7; --texte: #1d1d20; --doux: #5b5b63; --carte: #ffffff; --bord: #e2e2e6; --accent: #3b3b45; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #121214; --texte: #ececef; --doux: #a3a3ad; --carte: #1b1b1f; --bord: #2c2c33; --accent: #d4d4dc; }
+  }
+  body { margin: 0; background: var(--fond); color: var(--texte); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  p, li { color: var(--texte); }
+  .doux { color: var(--doux); font-size: .95rem; }
+  .carte { background: var(--carte); border: 1px solid var(--bord); border-radius: 12px; padding: 16px 20px; margin-top: 16px; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.2em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité de Co-Chan</h1>
+  <p class="doux">Éditeur : Bicode_DEV — contact : <a href="mailto:bicode.dev.professionnel@gmail.com">bicode.dev.professionnel@gmail.com</a><br>Dernière mise à jour : 4 novembre 2026</p>
+
+  <div class="carte">
+    <p><strong>En bref :</strong> Co-Chan n'a pas de serveur et ne collecte aucune donnée personnelle. Ce que l'application retient (historique, listes, réglages) reste sur votre appareil. Si vous activez la synchronisation, ces données sont copiées dans un dossier caché de <em>votre</em> Google Drive, que seul Co-Chan peut lire. Personne d'autre n'y a accès, pas même Bicode_DEV.</p>
+  </div>
+
+  <h2>1. Ce que Co-Chan garde sur votre appareil</h2>
+  <ul>
+    <li>l'historique de lecture (épisodes regardés, position de reprise, chapitres de scans lus) ;</li>
+    <li>vos listes et votre liste de suivi ;</li>
+    <li>vos réglages (thème, lecteur, préférences d'affichage) ;</li>
+    <li>vos téléchargements, dans le dossier que vous choisissez.</li>
+  </ul>
+  <p>Ces données ne quittent pas votre appareil, sauf si vous activez la synchronisation décrite ci-dessous.</p>
+
+  <h2>2. La synchronisation avec Google Drive (facultative)</h2>
+  <p>Dans <strong>Paramètres › Synchronisation</strong>, vous pouvez connecter votre compte Google pour retrouver votre historique, vos listes et vos réglages sur vos autres appareils.</p>
+  <ul>
+    <li><strong>Autorisation demandée :</strong> uniquement <code>drive.appdata</code>. Elle permet à Co-Chan de créer et lire ses propres fichiers dans le « dossier de données d'application » de votre Drive. Ce dossier est caché : il n'apparaît pas dans votre Drive, et Co-Chan ne voit <strong>aucun</strong> de vos autres fichiers.</li>
+    <li><strong>Ce qui est synchronisé :</strong> l'historique de lecture, les lectures de scans, vos listes et vos réglages. <strong>Les téléchargements ne le sont jamais</strong>, ni le dossier de téléchargement ni les réglages propres à un appareil.</li>
+    <li><strong>Où vont les données :</strong> directement de votre appareil à votre Google Drive. Elles ne passent par aucun serveur de Bicode_DEV et ne sont transmises à personne.</li>
+    <li><strong>Jetons de connexion :</strong> conservés uniquement sur votre appareil, pour éviter de vous reconnecter à chaque fois.</li>
+  </ul>
+  <p>L'utilisation et le transfert à toute autre application des informations reçues des API Google respecteront le <a href="https://developers.google.com/terms/api-services-user-data-policy">Règlement sur les données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée.</p>
+
+  <h2>3. Arrêter et effacer</h2>
+  <ul>
+    <li><strong>Se déconnecter :</strong> Paramètres › Synchronisation › Se déconnecter. Co-Chan oublie la connexion et révoque l'accès.</li>
+    <li><strong>Effacer les données synchronisées :</strong> le même écran propose de supprimer la copie gardée dans votre Drive.</li>
+    <li><strong>Depuis Google :</strong> vous pouvez retirer l'accès de Co-Chan à tout moment sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, et supprimer ses données cachées depuis les paramètres de Google Drive (Gérer les applications).</li>
+  </ul>
+
+  <h2>4. Les sites consultés par l'application</h2>
+  <p>Pour afficher les catalogues, les vidéos, les scans et les affiches, Co-Chan se connecte à des sites tiers (sites de diffusion, hébergeurs de vidéos, bases d'informations sur les animes) ainsi qu'à GitHub pour les mises à jour. Comme pour n'importe quel navigateur, ces sites voient votre adresse IP. Co-Chan ne leur transmet aucune donnée de votre compte Google.</p>
+
+  <h2>5. Contact</h2>
+  <p>Pour toute question sur vos données : <a href="mailto:bicode.dev.professionnel@gmail.com">bicode.dev.professionnel@gmail.com</a>.</p>
+
+  <p class="doux"><a href="./">← Retour à l'accueil de Co-Chan</a></p>
+</main>
+</body>
+</html>
